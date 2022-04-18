@@ -2,8 +2,8 @@
 
 * Allennlp 與 RNN 兩個資料夾是兩個獨立的 Project
 
-## Allenlp
-* Allenlp資料夾內僅包含使用allennlp架設server的script
+## Allennlp
+* Allennlp資料夾內僅包含使用allennlp架設server的script
 * 訓練模型等相關資源請參考: https://github.com/Chung-I/mandarin_to_tsm
 * pre-trained model 請於此下載: https://drive.google.com/file/d/1XTpGU9EwWviIbZjg6bhdLMiWL8d1VI9i/view?usp=sharing
 * pre-trained model 請放置於 Allennlp/model/ 資料夾內
@@ -15,8 +15,6 @@
 * RNN/翻譯語料內包含 **TGB** 及 **icorpus** 兩個來源
 * RNN/翻譯語料內包含前處理的程式碼，處理完成的資料放在 RNN/翻譯語料/tmp/ 裡
 * 根據經驗 (此處沒有數據)，RNN表現並沒有Allennlp的BERT模型好，但這邊提供了翻譯語料及前處理的script，可以好好利用
-
-##
 
 ## 其他台語資源 
 * Taiwanese-Corpus: https://github.com/Taiwanese-Corpus/hue7jip8

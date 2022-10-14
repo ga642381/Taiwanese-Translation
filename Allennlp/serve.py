@@ -21,12 +21,13 @@ class TranslationAPI():
         port_using = self.check_port_usage(port)
         if port_using:
             print(f"port {port} is using...")
+            print("You can use \"fuser -k [port]/tcp\" to kill the process.")
         else:
             print(f"Starting Allennlp server on port {port}")
             cmd = f'allennlp serve --archive-path {model_path} --predictor seq2seq --field-name source'
             print(cmd)
             self.proc = subprocess.Popen(cmd, shell=True)
-            #self.proc = subprocess.Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True)
+            # self.proc = subprocess.Popen(cmd, stdout = PIPE, stderr = PIPE, shell = True)
 
     def check_port_usage(self, port):
         cmd = f"fuser {port}/tcp"

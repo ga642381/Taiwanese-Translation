@@ -11,10 +11,13 @@
 * **tts_demo.tar.gz** 是使用 conda pack 工具export的，使用方式很簡單，請參考文件: https://conda.github.io/conda-pack/
 
 ## RNN
-* RNN資料夾內包含文字的訓練資料
-* RNN/翻譯語料內包含 **TGB** 及 **icorpus** 兩個來源
-* RNN/翻譯語料內包含前處理的程式碼，處理完成的資料放在 RNN/翻譯語料/tmp/ 裡
-* 根據經驗 (此處沒有數據)，RNN表現並沒有Allennlp的BERT模型好，但這邊提供了翻譯語料及前處理的script，可以好好利用 (參考翻譯語料 [README](https://github.com/ga642381/Taiwanese-Translation/tree/main/RNN/%E7%BF%BB%E8%AD%AF%E8%AA%9E%E6%96%99))
+* 簡單的 RNN 實做翻譯模型
+* 根據經驗 (此處沒有數據)，RNN 表現並沒有 Allennlp 的 BERT 模型好
+
+## Corpus
+* Corpus資料夾內包含文字的訓練資料
+* Corpus 內包含 **TGB** 及 **icorpus** 兩個來源
+* Corpus/翻譯語料內包含前處理的程式碼，處理完成的資料放在 Corpus/tmp/ 裡
 
 ## 其他台語資源 
 * Taiwanese-Corpus: https://github.com/Taiwanese-Corpus/hue7jip8
